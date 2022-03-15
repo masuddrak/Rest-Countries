@@ -10,11 +10,12 @@ const allCountries=(countries)=>{
     container.innerHTML=countriesHtml.join(' ')
 }
 const getCountry=(cuntry)=>{
-    console.log(cuntry.flags.png)
+    console.log(cuntry.capital?cuntry.capital[0]:'not fund')
     return `
         <div class='country'>
             <img src="${cuntry.flags.png}" alt="">
-            <h3>${cuntry.name.common}</h3>
+            <h3>Nmae:${cuntry.name.common}</h3>
+            <h3>Capital:${cuntry.capital?cuntry.capital[0]:'not fund'}</h3>    
         </div>
     
     `
