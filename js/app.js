@@ -10,9 +10,10 @@ const allCountries=(countries)=>{
     container.innerHTML=countriesHtml.join(' ')
 }
 const getCountry=(cuntry)=>{
-    console.log(cuntry)
+    console.log(cuntry.flags.png)
     return `
         <div class='country'>
+            <img src="${cuntry.flags.png}" alt="">
             <h3>${cuntry.name.common}</h3>
         </div>
     
