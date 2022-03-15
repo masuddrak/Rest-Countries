@@ -9,9 +9,7 @@ const allCountries=(countries)=>{
     const container=document.getElementById('countries')
     container.innerHTML=countriesHtml.join(' ')
 }
-const getCountry=(cuntry)=>{
-    // console.log(cuntry.capital?cuntry.capital[0]:'not fund')
-    const {flags,name,capital}=cuntry
+const getCountry=({flags,name,capital})=>{
     return `
         <div class='country'>
             <img src="${flags.png}" alt="">
